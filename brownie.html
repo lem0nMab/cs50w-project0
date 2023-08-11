@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownie</title>
+
+    <!-- Archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- Archivos CSS personalizados -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Archivos JavaScript de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivos JavaScript personalizados -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" class="logo">
+                    Repostería</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#conversion">Conversiones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="recetasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu" aria-labelledby="recetasDropdown">
+                                <li><a class="dropdown-item" href="lemonPie.html">Pie de limon</a></li>
+                                <li><a class="dropdown-item" href="pioV.html">Pio V</a></li>
+                                <li><a class="dropdown-item" href="tresLeches.html">Tres leches</a></li>
+                                <li><a class="dropdown-item" href="brownie.html">Brownie</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" class="container">
+            <h1 class="mt-4">Brownie</h1>
+
+            <img src="img/brownie.jpg" alt="Brownie" class="recipe-image img-fluid mx-auto d-block">
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <h2>Ingredientes</h2>
+
+                    <div class="ingredients-container">
+                        <ul>
+                            <li>200 g de chocolate semiamargo</li>
+                            <li>150 g de mantequilla</li>
+                            <li>200 g de azúcar</li>
+                            <li>3 huevos</li>
+                            <li>150 g de harina</li>
+                            <li>50 g de nueces picadas (opcional)</li>
+                            <li>1 cucharadita de esencia de vainilla</li>
+                            <li>1 pizca de sal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+
+                    <h2>Preparación</h2>
+
+                    <div class="preparation-container">
+                        <ol>
+                            <li>Precalienta el horno a 180°C (350°F). Engrasa y enharina un molde cuadrado o rectangular.</li>
+                            <li>Derrite el chocolate y la mantequilla en un recipiente resistente al calor, a baño maría o en el microondas a baja potencia.</li>
+                            <li>En otro recipiente, bate los huevos y el azúcar hasta obtener una mezcla espumosa.</li>
+                            <li>Agrega la mezcla de chocolate y mantequilla derretidos a la mezcla de huevos y azúcar, y mezcla bien.</li>
+                            <li>Añade la harina, la sal y la esencia de vainilla, y mezcla hasta obtener una masa homogénea.</li>
+                            <li>Si deseas, agrega las nueces picadas y mezcla suavemente.</li>
+                            <li>Vierte la masa en el molde preparado y extiéndela de manera uniforme.</li>
+                            <li>Hornea durante aproximadamente 25-30 minutos, o hasta que al insertar un palillo en el centro del brownie, este salga ligeramente húmedo.</li>
+                            <li>Retira el brownie del horno y déjalo enfriar completamente en el molde.</li>
+                            <li>Corta en porciones y sirve.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+// Variables
+$primary-color: #006600;
+$secondary-color: #008000;
+$neutral-color: #666666;
+$background-color: #f2f2f2;
+$link-color: #008000;
+
+// Mixin para los contenedores de fondo
+@mixin background-container {
+    background-color: $secondary-color;
+    padding: 10px;
+    //@include border-radius(40px);
+    margin-bottom: 30px;
+}
+
+// Estilos generales
+body {
+    background-color: $background-color;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+h2 {
+    color: $secondary-color;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: $primary-color;
+}
+
+// Barra de navegación
+.navbar {
+    background-color: $secondary-color;
+
+    .navbar-brand {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: #ffffff;
+    }
+}
+
+// Tarjeta de receta
+.card {
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    position: relative;
+    height: 100%;
+    width: 400px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &-img-top {
+        object-fit: cover;
+        height: 200px;
+    }
+
+    &-title {
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    &-description {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(72, 70, 70, 0.7);
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+
+        @include background-container;
+
+        &:hover {
+            opacity: 1;
+            visibility: visible;
+            display: block;
+        }
+    }
+}
+
+.logo {
+    width: 55px; 
+}
+
+// Enlaces
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.recipe-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    //@include border-radius(40px);
+}
+
+.ingredients-container {
+    @include background-container;
+}
+
+.preparation-container {
+    @include background-container;
+    //@include border-radius(40px);
+
+    ol {
+        counter-reset: list-counter;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    ol li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 40px;
+
+        &:before {
+            content: counter(list-counter);
+            counter-increment: list-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 30px;
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+}
+
+#conversion {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+    color: $primary-color;
+}
+
+table {
+    th {
+        text-align: center;
+        font-size: 25px;
+        
+        
+    }
+    td {
+        text-align: center;
+        font-size: 20px;
+        
+    }
+}

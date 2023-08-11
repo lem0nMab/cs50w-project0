@@ -1,1 +1,142 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+h1 {
+  color: #006600;
+}
+
+h2 {
+  color: #008000;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #006600;
+}
+
+.navbar {
+  background-color: #008000;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar .nav-link {
+  color: #ffffff;
+}
+
+.card {
+  margin-bottom: 30px;
+  transition: all 0.3s;
+  position: relative;
+  height: 100%;
+  width: 400px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+.card-title {
+  font-weight: bold;
+  color: #006600;
+}
+.card-description {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(72, 70, 70, 0.7);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  background-color: #008000;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.card-description:hover {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.logo {
+  width: 55px;
+}
+
+a {
+  color: #008000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.recipe-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.ingredients-container {
+  background-color: #008000;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.preparation-container {
+  background-color: #008000;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.preparation-container ol {
+  counter-reset: list-counter;
+  list-style-type: none;
+  padding-left: 0;
+}
+.preparation-container ol li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+.preparation-container ol li:before {
+  content: counter(list-counter);
+  counter-increment: list-counter;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 30px;
+  color: #006600;
+  font-weight: bold;
+}
+
+#conversion {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 25px;
+  color: #006600;
+}
+
+table th {
+  text-align: center;
+  font-size: 25px;
+}
+table td {
+  text-align: center;
+  font-size: 20px;
+}/*# sourceMappingURL=styles.css.map */
